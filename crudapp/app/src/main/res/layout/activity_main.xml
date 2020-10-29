@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/e_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"/>
+    <EditText
+        android:id="@+id/e_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Category"/>
+    <EditText
+        android:id="@+id/e_serial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Serial number"/>
+    <Button
+        android:id="@+id/b_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add product"
+        android:onClick="btn_click"/>
+    <Button
+        android:id="@+id/b_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete product"
+        android:onClick="btn_click"/>
+    <Button
+        android:id="@+id/b_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update product"
+        android:onClick="btn_click"/>
+    <Button
+        android:id="@+id/b_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List products"
+        android:onClick="btn_click"/>
+
+    <TextView
+        android:id="@+id/t_dblist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
